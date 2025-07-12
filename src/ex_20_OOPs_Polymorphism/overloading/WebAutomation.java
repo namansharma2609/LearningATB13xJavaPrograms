@@ -5,7 +5,8 @@ public class WebAutomation {
         Browser b1 = new Browser();
         b1.openBrowser();
 
-        b1.startBrowser("Chrome");
+        b1.openBrowser("Chrome");
+        b1.openBrowser("Safari");
 
     }
 }
@@ -15,7 +16,7 @@ class Browser{
         System.out.println("Starting Default Browser!!");
     }
 
-    String startBrowser(String browser){
+    String openBrowser(String browser){
         System.out.println("Starting browser "+ browser);
         return browser;
     }

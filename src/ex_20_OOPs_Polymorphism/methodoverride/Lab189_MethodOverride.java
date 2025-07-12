@@ -6,18 +6,19 @@ public class Lab189_MethodOverride {
         d.sound();
 
         Animal a = new Animal();
+        a.sound();
         System.out.println(d.equals(a));
 
     }
 }
 
-class Animal{
+class Animal{  //Animal is a super class
     void sound(){
         System.out.println("Default sound!!");
     }
 }
 
-class Dog extends Animal{
+class Dog extends Animal{ // Dog is the child class of Animal
 
     @Override
     void sound(){
