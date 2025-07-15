@@ -8,7 +8,7 @@ public class Task1_BasicTryCatch {
         try {
             int b = 10/a;
         } catch (ArithmeticException e) {
-            System.out.println("Div by zero is not allowed!!");
+            System.out.println(e.getClass());
         }
     }
 }
